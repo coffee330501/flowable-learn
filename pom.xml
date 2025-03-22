@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>learn01</module>
+        <module>learn02</module>
     </modules>
 
     <properties>
