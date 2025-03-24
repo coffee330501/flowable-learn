@@ -10,7 +10,6 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.List;
@@ -144,7 +143,6 @@ public class FlowableService {
 
         // 部署
         repositoryService.createDeployment().addBpmnModel("deployByBpmnModel.bpmn20.xml", bpmnModel).name("Deploy By BpmnModel").deploy();
-        long deployByBpmnModel = repositoryService.createDeploymentQuery().processDefinitionKey("deployByBpmnModel").count();
-        return deployByBpmnModel;
+        return repositoryService.createDeploymentQuery().processDefinitionKey("deployByBpmnModel").count();
     }
 }
