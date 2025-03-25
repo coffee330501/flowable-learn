@@ -1,0 +1,15 @@
+server:
+  port: 8111
+
+spring:
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/flowable
+
+# 打印 flowable 的 sql
+logging:
+  level:
+    org.flowable: debug
+

@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Main {
+public class ProcessVarTest {
     public static void main(String[] args) {
         ProcessEngine processEngine = getProcessEngine();
 
